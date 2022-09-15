@@ -1,0 +1,16 @@
+.fondo {
+    background-color: greenyellow;
+    margin: 10px auto;
+    width: 200px;
+    height: 100px;
+}
+
+.botonDelete {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    font-size: 13px;
+    margin: 10px auto;
+}

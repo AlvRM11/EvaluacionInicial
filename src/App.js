@@ -8,8 +8,12 @@ function App() {
 
   return (
     <div className="App">
-      <TaskAdd task setTask />
-      <TaskList task/>
+      <TaskAdd
+        setTask = {setTask}
+      />
+      <TaskList
+        task = {task}
+      />
     </div>
   );
 }

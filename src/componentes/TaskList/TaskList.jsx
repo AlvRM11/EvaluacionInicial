@@ -1,10 +1,12 @@
 import React from 'react';
 import './TaskList.css';
 
-const TaskList = () => {
+const TaskList = (props) => {
   return (
-    <div>
-        
+    <div className='fondo'>
+        <input type='checkbox' />
+        <p>{props.task}</p>
+        <button className='botonDelete'>Delete all done</button>
     </div>
   )
 };

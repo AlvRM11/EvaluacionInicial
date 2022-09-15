@@ -1,10 +1,9 @@
 import React from 'react';
 import './TaskAdd.css';
 
-const TaskAdd = () => {
+const TaskAdd = ({setTask}) => {
 
   const handleClick = () => {
-    console.log('hola');
   };
 
   return (
@@ -12,7 +11,7 @@ const TaskAdd = () => {
       <h1>My task list Apps</h1>
       <input type='text' name='task' />
       <br />
-      <button onClick={handleClick} >Add</button>
+      <button className='botonAdd' onClick={handleClick} >Add</button>
     </div>
   )
 };
