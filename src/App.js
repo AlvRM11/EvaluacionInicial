@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import TaskAdd from './componentes/TaskAdd';
+import TaskList from './componentes/TaskList/TaskList'; //Por alguna razón no me deja utilizar el index.js de la carpeta TaskList
 
 function App() {
+  const [task, setTask] = useState('');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TaskAdd task setTask />
+      <TaskList task/>
     </div>
   );
 }
